@@ -1,0 +1,248 @@
+/* nunito-sans-200 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Nunito Sans";
+  font-style: normal;
+  font-weight: 200;
+  src: url("../fonts/nunito-sans-v15-latin-200.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* nunito-sans-300 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Nunito Sans";
+  font-style: normal;
+  font-weight: 300;
+  src: url("../fonts/nunito-sans-v15-latin-300.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* nunito-sans-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Nunito Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/nunito-sans-v15-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* nunito-sans-500 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Nunito Sans";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/nunito-sans-v15-latin-500.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* nunito-sans-600 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Nunito Sans";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../fonts/nunito-sans-v15-latin-600.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 62.5%;
+  height: 100%;
+}
+
+img {
+  display: flex;
+  object-fit: cover; /* contain */
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+body {
+  font-family: "Nunito Sans", sans-serif;
+  background-color: var(--main-bg-color);
+}
+
+:root {
+  --white-color: #ffffff;
+  --dark-black-color: #111517;
+  --main-bg-color: #fafafa;
+  --ff-Nunito: "Nunito sans", sans-serif;
+}
+
+.container {
+  width: 100%;
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+
+.header-container {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-logo-title {
+  color: var(--dark-black-color);
+  font-family: var(--ff-Nunito);
+  font-size: 2.4rem;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  transition: 0.2s ease;
+}
+
+.header-logo-title:hover {
+  color: yellowgreen;
+}
+
+.dark-mode {
+  background: inherit;
+  border: 0;
+  cursor: pointer;
+  color: orange;
+  font-family: var(--ff-Nunito);
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  transition: 0.2s ease;
+}
+
+.dark-mode-color {
+  --dark-black-color: #fff;
+  --main-bg-color: #222;
+  --white-color: #3d464f;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.dark-mode:hover {
+  color: lightskyblue;
+}
+
+.main {
+  background: var(--main-bg-color);
+}
+
+.main-container {
+  width: 100%;
+  max-width: 1440px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: var(--main-bg-color);
+}
+
+form {
+  padding-top: 20px;
+}
+
+.card-search {
+  width: 480px;
+  padding: 20px;
+  color: var(--dark-black-color);
+  font-family: var(--ff-Nunito);
+  font-size: 1.9rem;
+  font-style: normal;
+  font-weight: 100;
+  line-height: normal;
+  border: 0;
+  background-color: var(--white-color);
+}
+
+.card-search:focus {
+  outline-color: cornflowerblue;
+}
+
+.main-card {
+  width: 100%;
+  max-width: 1440px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 7.5rem;
+  padding-top: 4.8rem;
+  padding-bottom: 4.8rem;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  width: 264px;
+  height: 336px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 7px 2px rgba(0, 0, 0, 0.03);
+  background: var(--white-color);
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.card:hover {
+  box-shadow: 0px 0px 7px 2px rgba(239, 5, 5, 0.559);
+}
+
+.card-img {
+  margin-bottom: 2.4rem;
+}
+
+.card-title {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  color: var(--dark-black-color);
+  font-family: var(--ff-Nunito);
+  font-style: normal;
+}
+
+.card-header-title {
+  font-weight: 800;
+  line-height: 2.6rem;
+  font-size: 1.8rem;
+  margin-bottom: 1.6rem;
+}
+.card-population {
+  font-size: 1.4rem;
+  font-weight: 600;
+  line-height: 1.6rem;
+  margin-top: 8px;
+}
+
+.p-common {
+  color: var(--dark-black-color);
+  font-size: 1.4rem;
+  font-weight: 300;
+  line-height: 1.6rem;
+  transition: 0.2s ease;
+}
+
+.p-common:hover {
+  opacity: 0.7;
+}
